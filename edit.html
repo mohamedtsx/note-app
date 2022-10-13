@@ -6,37 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
-
-    <title>Notes</title>
+    <title>Edit</title>
 </head>
 <body>
-    <header class="header">
+    <div class="header">
         <div class="container">
             <h1 class="header__title">Notes App</h1>
             <h2 class="header__subtitle">Take notes and never forget</h2>
         </div>
-    </header>
+    </div>
 
     <div class="actions">
-        <div class="actions__container">
-            <input class="input" type="text" placeholder="Filter notes" id="notesFilter">
-            <select name="" id="sortBy" class="dropdown">
-                <option value="lastEdited">Sort by last edited</option>
-                <option value="realted">Sort by recently realted</option>
-                <option value="alphabetically">Sort alphabetically</option>
-            </select>
+        <div class="actions__container actions__container--spaced">
+            <a href="index.html">Home</a>
+            <span id="lastUpdated"></span>
         </div>
     </div>
 
     <div class="container">
-        <div id="notesContainer"></div>
-        <button class="button" id='createNoteBtn'>Create Note</button>
+        <input class="title-input" type="text" placeholder="Enter a title" id="noteTitle">
+        <textarea class="body-input" name="" cols="30" rows="10" placeholder="my note..." id="noteBody"></textarea> 
+        <button class="button button--secondary" type="button" id="removeThisNoteBtn">Remove</button>        
     </div>
 
 
-    <script src="scripts/uuidv4.js"></script>
     <script src="scripts/moment.js"></script>
     <script src="scripts/notes-function.js"></script>
-    <script src="scripts/notes-app.js"></script>
+    <script src="scripts/edit-function.js"></script>
 </body>
 </html>

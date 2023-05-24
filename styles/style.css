@@ -65,8 +65,8 @@ a {
 }
 
 .actions__container {
-    align-items: center;
     display: flex;
+    align-items: center;
     max-width: 60rem;
     margin: 0 auto;
     min-height: 3rem;
@@ -87,6 +87,7 @@ a {
     height: 3rem;
     margin-right: .8rem;
     padding: .4rem .8rem;
+    width: auto;
 }
 
 .dropdown {
@@ -185,7 +186,8 @@ a {
     .actions__container {
         padding: 0;
     }
-    .input {
-        padding: .4rem .4rem;
+    .input, 
+    .dropdown {
+        width: calc(100% /2);
     }
 }
